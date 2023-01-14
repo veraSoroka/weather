@@ -28,7 +28,7 @@ document.addEventListener("keydown", function (event){
 
 function getWeather (cityName) {
     btnMore.style.display = "block";
-    let url1 = `http://api.openweathermap.org/data/2.5/weather?q=${cityName}&units=metric&appid=fd2c29df66882de993d427cb8f5d1c29`;
+    let url1 = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&units=metric&appid=fd2c29df66882de993d427cb8f5d1c29`;
 
 
 // ******* RIGHT SIDE *******
@@ -106,7 +106,7 @@ function getWeather (cityName) {
         })
 
 
-    let url33 =`http://api.openweathermap.org/data/2.5/forecast?q=${cityName}&units=metric&appid=fd2c29df66882de993d427cb8f5d1c29`;
+    let url33 =`https://api.openweathermap.org/data/2.5/forecast?q=${cityName}&units=metric&appid=fd2c29df66882de993d427cb8f5d1c29`;
 
     fetch(url33)
         .then(function (responce) {
@@ -133,7 +133,7 @@ function getWeather (cityName) {
         let lat = position.coords.latitude;
         let lon = position.coords.longitude;
 
-        let url44 = `http://api.openweathermap.org/geo/1.0/reverse?lat=${lat}&lon=${lon}&limit=1&appid=fd2c29df66882de993d427cb8f5d1c29`;
+        let url44 = `https://api.openweathermap.org/geo/1.0/reverse?lat=${lat}&lon=${lon}&limit=1&appid=fd2c29df66882de993d427cb8f5d1c29`;
         console.log(url44);
 
         fetch(url44)
