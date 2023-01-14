@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="img/weather-vane.png" type="image/x-icon">
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrapper">
+    <div class="left-side">
+        <div class="input-place">
+            <input class="input-city" type="text" placeholder="city"><img src="img/search.png" class="input-city-img"/></input>
+            <div class="error"></div>
+            <div class="my-location"><img src="img/local.png"/>my location</div>
+        </div>
+        <div class="city-name"></div>
+        <div class="data"></div>
+        <div class="time"></div>
+        <div class="weather">
+            <div class="weather-info-bottom">
+                <div class="weather-item"></div>
+                <div class="weather-clouds-img"></div>
+            </div>
+            <div class="left-side-bottom">
+                <div class="weather-clouds"></div>
+                <button class="more-info">more info</button>
+            </div>
+        </div>
+    </div>
+    <div class="right-side">
+        <div class="close-btn"><img src="img/close.png"></div>
+        <div class="humidity"></div>
+        <div class="wind"></div>
+        <div class="feels"></div>
+        <div id="next-day-1" class="weather-day">
+            <div class="data-right">
+                <div class="name-day"></div>
+                <div class="data-weather"></div>
+            </div>
+            <div class="weather-info"></div>
+            <div class="weather-icon"></div>
+        </div>
+        <div id="next-day-2" class="weather-day">
+            <div class="data-right">
+                <div class="name-day"></div>
+                <div class="data-weather"></div>
+            </div>
+            <div class="weather-info"></div>
+            <div class="weather-icon"><img src="img/icon.png"></div>
+        </div>
+        <div id="next-day-3" class="weather-day">
+            <div class="data-right">
+                <div class="name-day"></div>
+                <div class="data-weather"></div>
+            </div>
+            <div class="weather-info"></div>
+            <div class="weather-icon"><img src="img/icon.png"></div>
+        </div>
+    </div>
+</div>
+
+<script src="main.js"></script>
+
+</body>
+</html>
